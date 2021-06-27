@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QFileDialog
 from code.utility.camera import Camera
 import cv2
 
-class MainController:
+class MainWidgetController:
     def __init__(self,widget):
         self.widget = widget
         self.main_timer = QTimer()

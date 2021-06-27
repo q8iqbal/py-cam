@@ -1,11 +1,11 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QWidget
-from code.modul.main.main_controller import MainController
+from code.modul.main.main_controller import MainWidgetController
 
 class MainWidget(QWidget):
     def __init__(self):
         super(MainWidget,self).__init__()
-        self._page_ctrl = MainController(self)
+        self._page_ctrl = MainWidgetController(self)
         self._init_ui()
         self._init_listener()
         

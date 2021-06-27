@@ -3,9 +3,9 @@ from PyQt5.QtWidgets import QMainWindow, QApplication
 from code.modul.main.main_view import MainWidget
 import sys
 
-class Ui(QMainWindow):
+class Window(QMainWindow):
     def __init__(self):
-        super(Ui, self).__init__()
+        super(Window, self).__init__()
         uic.loadUi('resource/ui/main_window.ui',self)
         self._init_ui()
     
@@ -16,7 +16,7 @@ class Ui(QMainWindow):
 
 def main():
     app = QApplication(sys.argv)
-    view = Ui()
+    view = Window()
     sys.exit(app.exec_())
 
 if __name__ == "__main__":
